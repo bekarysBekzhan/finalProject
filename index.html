@@ -8,37 +8,46 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="index.js"></script>
     <div class="header">
         <div class="inner_header">
-            <div class="logo_container">
-                <a href="index.html"><h1>Our Site</h1></a>
+            <div class="row">
+                <div class="col-2">
+                    <div class="logo_container">
+                        <a href="index.html"><h1>Our Site</h1></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button><img src="img/menu.png" alt="" class="menu_Icon" onclick="toggle()"></button>
+                </div>
             </div>
+            
             <div class="navbar">
                 <div class="search_Box">
-                    <input type="text" placeholder="Search here... ">
-                    <span><a href="#"><img src="img/search.png" alt="" class="search_Icon"></a></span>
+                    <input id="searchThing" type="text" placeholder="Search here... ">
+                    <span><a href="#"><img src="img/search.png" alt="" class="search_Icon" onclick="search()"></a></span>
                     
                 </div>
                 <ul>
                     <li>
                         <a href="#">
                             <span><img src="img/user.png" alt="" class="navbar_Icon"></span>
-                            Профиль</a>
+                            <h1>Профиль</h1></a>
                     </li>
                     <li>
                         <a href="#">
                             <span><img src="img/star.png" alt="" class="navbar_Icon"></span>
-                            Избранное</a>
+                            <h1>Избранное</h1></a>
                     </li>
                     <li>
                         <a href="#">
-                            <span><img src="img/shopping-cart.png" alt="" class="navbar_Icon"></span>
-                            Корзина</a>
+                            <span><img src="img/shopping-cart.png" alt="" class="navbar_Icon"></span><h1>
+                            Корзина</h1></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="outer_header">
+        <div class="outer_header" id="nav">
             <ul>
                 <li>
                     <a href="#"><span><img src="img/toys.png" alt="" class="outer_header_Icon"></span><h1>Мягкие игрушки</h1></a>

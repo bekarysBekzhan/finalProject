@@ -21,7 +21,8 @@
     margin: 0 auto;
 }
 .logo_container{
-    display: flex;
+    display: inline-block;
+    white-space: nowrap;
     align-items: center;
     height: 100%;
     width: 20%;
@@ -69,7 +70,13 @@ ul li a{
     text-decoration: none;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: blue;
+    display: none;
 }
 .navbar_Icon{
     width: 20px;
@@ -106,4 +113,169 @@ ul li a{
 .outer_header_Icon{
     text-align: center;
     width: 40px;
+}
+.menu_Icon{
+    width: 30px;
+    background-color: blue;
+}
+
+
+@media (max-width: 768px){
+    .inner_header ul li a h1{
+        display: none;
+    }
+    .navbar_Icon{
+        width: 30px;
+    }
+    .row{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .col-2{
+        flex-basis: 50%;
+    }
+    .logo_container{
+        white-space: nowrap;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+    .outer_header{
+        position: absolute;
+        border-radius: 10px;
+        width: 30%;
+        height: 100vh;
+        right: 0;
+        background-color: blue;
+    }
+    .outer_header ul{
+        width: 100%;
+        display: block;
+    }
+    .inner_header button{
+        display: inline;
+        position: relative;
+        left: 10px;
+    }
+    .outer_header.navactive{
+        display: inline;
+    }
+    .outer_header{
+        display: none;
+    }
+    .outer_header ul li{
+        display: block;
+        margin: 0 3%;
+    }
+    .outer_header ul li a{
+        display: contents;
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        color: black;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+}
+@media (max-width: 480px){
+    .inner_header ul li a h1{
+        display: none;
+    }
+    .menu_Icon{
+        width: 25px;
+        background-color: blue;
+    }
+    .header{
+        height: 200%;
+    }
+    .inner_header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200%;
+    }
+    .logo_container{
+        white-space: nowrap;
+        display: inline-block;
+        width: 50%  ;
+    }
+    .search_Box{
+        position: relative;
+        width: 60%;
+    }
+    .search_Box input{
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 10PX;
+        font-size: 20px;   
+    }
+    .navbar{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .col-2{
+        flex-basis: 50%;
+    }
+    .navbar_Icon{
+        width: 25px;
+    }
+    .search_Box input{
+        display: none;
+    }
+    .search_Box input.searchactive{
+        display: inline;
+    }
+    .outer_header{
+        position: absolute;
+        border-radius: 10px;
+        width: 30%;
+        height: 100vh;
+        right: 0;
+        background-color: blue;
+    }
+    .outer_header ul{
+        width: 100%;
+        display: block;
+    }
+    .inner_header .row .col-2 button{
+        display: inline;
+        position: relative;
+        right: 0;
+    }
+    .outer_header.navactive{
+        display: inline;
+    }
+    .outer_header{
+        display: none;
+    }
+    .outer_header ul li{
+        display: block;
+        margin: 0 3%;
+    }
+    .outer_header ul li a{
+        display: contents;
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        color: black;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
 }
