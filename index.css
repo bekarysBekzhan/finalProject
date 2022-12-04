@@ -4,11 +4,15 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    font-family: 'Comfortaa';
+}
+
 .header{
     width: 100%;
     height: 80px;
     display: block;
-    background-color: blue;
+    background-color: rgb(53, 53, 210);
 }
 .inner_header{
     position: relative;
@@ -17,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: blue;
+    background-color: rgb(53, 53, 210);
     margin: 0 auto;
 }
 .logo_container{
@@ -70,12 +74,12 @@ ul li a{
     text-decoration: none;
     text-align: center;
     color: white;
-    font-size: 10px;
+    font-size: 8px;
 }
 button{
     outline: none;
     border: none;
-    background-color: blue;
+    background-color: rgb(53, 53, 210);
     display: none;
 }
 .navbar_Icon{
@@ -116,7 +120,7 @@ button{
 }
 .menu_Icon{
     width: 30px;
-    background-color: blue;
+    background-color: rgb(53, 53, 210);
 }
 
 
@@ -143,13 +147,16 @@ button{
         width: 50%;
         text-align: center;
     }
+    .logo_container a h1{
+        font-size: 30px;
+    }
     .outer_header{
         position: absolute;
         border-radius: 10px;
         width: 30%;
         height: 100vh;
         right: 0;
-        background-color: blue;
+        background-color: rgb(53, 53, 210);
     }
     .outer_header ul{
         width: 100%;
@@ -176,7 +183,7 @@ button{
         display: inline-block;
         text-decoration: none;
         text-align: left;
-        color: black;
+        color: rgba(255, 255, 255, 0.844);
         font-size: 10px;
         font-weight: 400;
     }
@@ -188,7 +195,7 @@ button{
     }
     .menu_Icon{
         width: 25px;
-        background-color: blue;
+        background-color: rgb(53, 53, 210);
     }
     .header{
         height: 200%;
@@ -202,7 +209,10 @@ button{
     .logo_container{
         white-space: nowrap;
         display: inline-block;
-        width: 50%  ;
+        width: 50%;
+    }
+    .logo_container a h1{
+        font-size: 30px;
     }
     .search_Box{
         position: relative;
@@ -246,7 +256,7 @@ button{
         width: 30%;
         height: 100vh;
         right: 0;
-        background-color: blue;
+        background-color: rgb(53, 53, 210);
     }
     .outer_header ul{
         width: 100%;
@@ -273,7 +283,7 @@ button{
         display: inline-block;
         text-decoration: none;
         text-align: left;
-        color: black;
+        color: rgba(255, 255, 255, 0.844);
         font-size: 10px;
         font-weight: 400;
     }
