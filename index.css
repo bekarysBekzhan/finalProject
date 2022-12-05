@@ -123,8 +123,12 @@ button{
     background-color: rgb(53, 53, 210);
 }
 
-
-@media (max-width: 768px){
+@media (max-width: 1348px){
+    .inner_header .navbar ul li a h1{
+        font-size: 10px;
+    }
+}
+@media (max-width: 890px){
     .inner_header ul li a h1{
         display: none;
     }
