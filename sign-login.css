@@ -1,0 +1,37 @@
+body{
+    font-family: 'Comfortaa';
+}
+.sign-up-form{
+    margin: 5% auto;
+    width: 40%;
+    padding: 5% 0;
+    height: 500px;
+    text-align: center;
+    background-color: #088178;
+    border-radius: 20px;
+}
+
+.sign-up-form form{
+    display: flex;
+    flex-direction: column;
+}
+.sign-up-form form input{
+    width: 60%;
+    margin: 2% auto;
+    height: 30px;
+    border-radius: 5px;
+}
+.sign-up-form form .button{
+    width: 30%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    margin: 2% auto;
+    cursor: pointer;
+}
+.errorMessage{
+    font-weight: 200;
+    color: rgb(10, 82, 106);
+    font-size: 2rem;
+}   
