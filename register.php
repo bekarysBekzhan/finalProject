@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
     $cpass = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
 
-    $select_users = mysqli_query($conn, "SELECT * FROM 'users' WHERE email = '$email' AND password = '$pass'") or die("Damn");
+    $select_users = mysqli_query($conn, "SELECT * FROM 'users' WHERE email = '$email' AND password = '$pass'") or die("Query failed!");
 
     if (!$select_users || mysqli_num_rows($select_users) > 0) {
         $message[] = 'User already exist!';
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
             or die('Query failed!');
             $message[] = 'Registered successfully!';
         }else {
-            $message[] = 'Passwords don\'t match!';
+            $message[] = 'Passwords don`t match!';
         }
     }
 }
