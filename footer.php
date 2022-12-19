@@ -27,9 +27,9 @@
       </div>
 
       <div class="box">
-         <h3>follow us</h3>
+         <h3>Follow us</h3>
          <a href="#"> <i class="fab fa-whatsapp"></i> Whatsapp </a>
-         <a href="https://t.me/Tortera"> <i class="fab fa-telegram"></i> Telegram </a>
+         <a href="#"> <i class="fab fa-telegram"></i> Telegram </a>
          <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
       </div>
 
@@ -37,3 +37,8 @@
    <p class="credit"> &copy; Copyright  @ <?php echo date('Y'); ?> by <span>OurShop</span> </p>
 
 </section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
