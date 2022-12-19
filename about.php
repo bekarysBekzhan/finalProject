@@ -12,23 +12,13 @@ if(!isset($user_id)){
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
    
 <?php include 'header.php'; ?>
-
+<script>
+   document.title = 'About';
+</script>
 <div class="heading">
-   <h3>about us</h3>
+   <h3>About us</h3>
    <p> <a href="home.php">Home</a> / About </p>
 </div>
 
@@ -37,7 +27,7 @@ if(!isset($user_id)){
    <div class="flex">
 
       <div class="image">
-         <img src="images/photo-for-about.jpg" alt="">
+         <img src="img/photo-for-about.jpg" alt="">
       </div>
 
       <div class="content">
@@ -57,7 +47,7 @@ if(!isset($user_id)){
    <div class="box-container">
 
       <div class="box">
-         <img src="img/ansar.png" alt="">
+         <img src="img/ansar.jpg" alt="">
          <p>SDU</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -70,7 +60,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="img/dariga.png" alt="">
+         <img src="img/dariga.jpg" alt="">
          <p>SDU</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -106,7 +96,7 @@ if(!isset($user_id)){
    <div class="box-container">
 
       <div class="box">
-         <img src="img/ansar.png" alt="">
+         <img src="img/ansar.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-whatsapp"></a>
             <a href="#" class="fab fa-telegram"></a>
@@ -116,7 +106,7 @@ if(!isset($user_id)){
       </div>
 
       <div class="box">
-         <img src="img/dariga.png" alt="">
+         <img src="img/dariga.jpg" alt="">
          <div class="share">
             <a href="#" class="fab fa-whatsapp"></a>
             <a href="#" class="fab fa-telegram"></a>
@@ -141,14 +131,4 @@ if(!isset($user_id)){
 </section>
 
 
-
-
-
-
-
 <?php include 'footer.php'; ?>
-
-<script src="js/script.js"></script>
-
-</body>
-</html>
